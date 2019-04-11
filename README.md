@@ -13,5 +13,6 @@ From A to B to C and beyond, here are some helpful demos and tricks for going fr
    * See how two containers can communicate
    * Checkout how using multiple `docker-compose` files can customize your setup
    * (Bonus) See "works on my machine" in action
-1. [Multi Stage and CICD](./Demo%204%20-%20Multi-Stage%20and%20CICD/Notes.md)
+1. [Multi Stage and CICD](./Demo%203%20-%20Multi-Stage%20and%20CICD/Notes.md)
    * What are multi-stage docker builds?
+   * Build, test, and deploy your containers
