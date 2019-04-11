@@ -1,0 +1,17 @@
+version: "3"
+services:
+
+  mongo:
+    image: mongo
+
+  app:
+    build: .
+    volumes:
+      - ".:/usr/src/app"
+    command: "npm run dev"
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development

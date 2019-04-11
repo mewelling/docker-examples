@@ -1,0 +1,20 @@
+version: "3"
+services:
+
+  mongo:
+    image: mongo
+
+  app1:
+    image: 379173709391.dkr.ecr.us-east-2.amazonaws.com/demo5-app1:latest
+    ports:
+      - "3000:3000"
+
+  app2:
+    image: 379173709391.dkr.ecr.us-east-2.amazonaws.com/demo5-app2:latest
+    ports:
+      - "3001:3000"
+
+  app1:
+    image: 379173709391.dkr.ecr.us-east-2.amazonaws.com/demo5-app3:latest
+    ports:
+      - "3002:3000"

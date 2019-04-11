@@ -1,0 +1,20 @@
+{
+  "name": "demo-1",
+  "version": "1.0.0",
+  "description": "Demo Node.js app example",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Michael Welling <michael@pactsafe.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
+  }
+}
