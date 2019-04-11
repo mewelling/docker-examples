@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  app:
+    build: .
+    volumes:
+      - ".:/usr/src/app"
+    command: "npm run dev"
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=development

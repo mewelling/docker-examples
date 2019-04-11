@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+  mongo:
+    image: mongo
+
+  app:
+    build: .
+    volumes:
+      - ".:/usr/src/app"
+    command: "npm run dev"
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+
+  # This service is using an image hosted in AWS... but we can override it!
+  api:
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo5-app1:latest
+    ports:
+      - "3001:3000"

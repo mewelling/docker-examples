@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  api:
+    build: .
+    volumes:
+      - ".:/usr/src/app"
+    depends_on:
+      - mongo
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
