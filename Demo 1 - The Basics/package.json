@@ -11,7 +11,7 @@
   "author": "Michael Welling <michael@pactsafe.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
